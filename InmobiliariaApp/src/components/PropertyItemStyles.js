@@ -6,21 +6,21 @@ export const propertyItemStyles = StyleSheet.create({
         alignItems: 'center',
         marginVertical: 5,
         marginRight: 15,
-        },
-        icon: {
+    },
+    icon: {
         width: 20,
         height: 20,
         
-        },
-        infoContainer: {
+    },
+    infoContainer: {
         flexDirection: 'row',
         alignItems: 'center',
         marginVertical: 5,
-        },
-        infoText: {
+    },
+    infoText: {
         marginLeft: 5,
-        },
-        card: {
+    },
+    card: {
         borderWidth: 1,
         borderColor: '#ccc',
         borderRadius: 8,
@@ -29,16 +29,16 @@ export const propertyItemStyles = StyleSheet.create({
         backgroundColor: 'rgb(245, 253, 255)',
         flexDirection: 'row',
         alignItems: 'center',
-        },
-        imageContainer: {
+    },
+    imageContainer: {
         width: 100,
         height: 100,
         marginRight: 10,
         borderRadius: 8,
         overflow: 'hidden',
         position: 'relative',
-        },
-        ratingContainer: {
+    },
+    ratingContainer: {
         position: 'absolute',
         bottom: 10,
         left: '44%',
@@ -49,52 +49,52 @@ export const propertyItemStyles = StyleSheet.create({
         borderRadius: 15,
         paddingHorizontal: 7,
         paddingVertical:5,
-        },
-        starIcon: {
+    },
+    starIcon: {
         width: 15,
         height: 15,
         marginRight: 3,
         tintColor: 'rgba(238, 186, 0, 1)', // Cambia el color del ícono de la estrella según tu preferencia
-        },
-        ratingText: {
+    },
+    ratingText: {
         fontWeight: 'bold',
-        },
-        image: {
+    },
+    image: {
         width: '100%',
         height: '100%',
-        },
+    },
         detailsContainer: {
         flex: 1,
-        },
-        title: {
+    },
+    title: {
         fontWeight: 'bold',
         fontSize: 18,
         marginBottom: 5,
-        },
-        location: {
+    },
+    location: {
         color: '#888',
         marginBottom: 5,
-        },
-        likeContainer: {
+    },
+    likeContainer: {
         position: 'absolute',
         bottom: 10,
         right: 10,
-        },
-        likeIcon: {
+    },
+    likeIcon: {
         width: 20,
         height: 20,
         tintColor: 'green',
-        },
-        addressContainer: {
+    },
+    addressContainer: {
         flexDirection: 'row',
         alignItems: 'center',
-        },
-        locationIcon: {
+    },
+    locationIcon: {
         width: 15,
         height: 15,
         marginRight: 5,
-        },
+    },
         addressText: {
         fontSize: 16,
-        },
+    },
 });
