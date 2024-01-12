@@ -1,5 +1,5 @@
 import React from 'react';
-import {render} from '@testing-library/react-native'
+import {render} from '@testing-library/react-native';
 import PropertyItem from '../src/components/PropertyItem';
 
 describe('PropertyItem', () => {

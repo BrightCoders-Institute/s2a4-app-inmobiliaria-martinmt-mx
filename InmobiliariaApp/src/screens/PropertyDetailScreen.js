@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import PropTypes from 'prop-types';
 
 const PropertyDetailScreen = ({ route }) => {
   // Suponiendo que pasas la propiedad seleccionada como parámetro a través de la navegación
@@ -17,6 +18,23 @@ const PropertyDetailScreen = ({ route }) => {
       {/* Otros detalles de la propiedad que desees mostrar */}
     </View>
   );
+};
+
+PropertyDetailScreen.propTypes = {
+  route: PropTypes.shape({
+    params: PropTypes.shape({
+      property: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        address: PropTypes.string.isRequired,
+        bedrooms: PropTypes.number.isRequired,
+        bathrooms: PropTypes.number.isRequired,
+        area: PropTypes.string.isRequired,
+        rent: PropTypes.string.isRequired,
+        rating: PropTypes.number.isRequired,
+        // Agrega otras propiedades según sea necesario
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default PropertyDetailScreen;

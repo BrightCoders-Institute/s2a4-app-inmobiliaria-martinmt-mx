@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { propertyItemStyles } from './PropertyItemStyles'
+import PropTypes from 'prop-types';
 
 const PropertyItem = ({ property, onPress }) => {
     const [liked, setLiked] = useState(false);
@@ -56,5 +57,19 @@ const PropertyItem = ({ property, onPress }) => {
 const styles = StyleSheet.create({
   
 });
+
+PropertyItem.propTypes = {
+  property: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    address: PropTypes.string.isRequired,
+    bedrooms: PropTypes.number.isRequired,
+    bathrooms: PropTypes.number.isRequired,
+    area: PropTypes.string.isRequired,
+    rent: PropTypes.string.isRequired,
+  }).isRequired,
+  onPress: PropTypes.func.isRequired,
+};
 
 export default PropertyItem;
